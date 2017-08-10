@@ -1,2 +1,12 @@
-redbubble-vim-golf:
-  key: "value"
+---
+redbubble-vim-golf: !ruby/marshalable:Models::Competition
+  :__v2__:
+  - :@data
+  ? - &1 !ruby/object:OpenStruct
+      table:
+        :users:
+        - !ruby/object:Models::User
+          data:
+        :key: value
+        :name: redbubble-vim-golf
+  : *1

@@ -13,11 +13,10 @@ class GolfServer < Sinatra::Base
   end
 
   post "/competitions/:name/users" do
-    # TODO create a user for a competition
     user = Repositories::UserRepository.create!(params[:user])
-    competition = Repositories::CompetitionRepository.find(:name)
+    competition = Repositories::CompetitionRepository.find!(params[:name])
     competition.users << user
-    competition.save!
+    Repositories::CompetitionRepository.save!(competition)
     [201, "Yay! You've been added to #{competition.name}!"]
   end
 
