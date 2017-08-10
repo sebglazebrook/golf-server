@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  appserver:
+    build: .
+    volumes:
+      - .:/code
+    ports:
+      - "9292:9292"
