@@ -8,7 +8,6 @@ class GolfServer < Sinatra::Base
   end
 
   get "/competitions/:name/daily_status" do
-    # TODO get a competition's status for the day
     competition = Repositories::CompetitionRepository.find!(params[:name])
     [200, competition.status.to_json]
   end
