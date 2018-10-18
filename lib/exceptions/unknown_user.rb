@@ -1,0 +1,1 @@
+class UnknownUser < StandardError; end

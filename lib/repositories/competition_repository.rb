@@ -17,6 +17,8 @@ module Repositories
       competition
     end
 
+    private
+
     def self.data_store
       @data_store ||= YAML.load_file(DATA_FILE)
     end

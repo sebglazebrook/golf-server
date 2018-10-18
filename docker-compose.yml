@@ -5,5 +5,8 @@ services:
     build: .
     volumes:
       - .:/code
+      - ./tmp/gems:/gems
     ports:
       - "9292:9292"
+    environment:
+      - GEM_HOME=/gems

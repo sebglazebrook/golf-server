@@ -1,19 +1,4 @@
 ---
 - !ruby/object:Models::User
-  data: 
-- !ruby/object:Models::User
-  data: 
-- !ruby/object:Models::User
-  data: 
-- !ruby/object:Models::User
-  data: 
-- !ruby/object:Models::User
-  data: 
-- !ruby/object:Models::User
-  data: 
-- !ruby/object:Models::User
-  data: 
-- !ruby/object:Models::User
-  data: 
-- !ruby/object:Models::User
-  data: 
+  data:
+    :username: superman

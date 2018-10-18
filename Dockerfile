@@ -2,6 +2,8 @@ FROM ruby:alpine
 
 WORKDIR /code
 
+ENV GEM_HOME /gems
+
 ADD Gemfile* /code/
 
 RUN bundle install
